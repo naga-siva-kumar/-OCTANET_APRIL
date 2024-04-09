@@ -1,0 +1,94 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  body {
+    background-image: url("E:\img6.avif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+  }
+  .cont{
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px;
+    background: transparent;
+  }
+  .todo{
+    width: 100%;
+    max-width: 540px;
+    background-color: aliceblue;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+  }
+  .todo h2{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    color: aqua;
+  }
+  .todo h2 img{
+    width: 30px;
+    margin-left: 10px;
+  }
+  .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: lightgrey;
+    border-radius: 20px;
+  }
+  input{
+    flex: 1;
+    outline: none;
+    border: none;
+    background: transparent;
+    padding: 10px;
+  }
+  button{
+    border: none;
+    outline: none;
+    padding: 15px 50px;
+    border-radius: 20px;
+    background: #40e0d0;
+    cursor: pointer;
+  }
+ul li{
+  list-style: none;
+  font-size: 17px;
+  padding: 12px 8px 12px 50px;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+}
+ul li::before{
+  content: '';
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  top:12px;
+  left: 8px;
+}
+ul li.ch{
+  text-decoration: line-through;
+}
+ul li span{
+  position:absolute;
+  right: 0;
+  top: 5px;
+  width: 50px;
+  height: 50px;
+  font: 20px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+}
+ul li span::hover{
+  background-color: white;
+}
